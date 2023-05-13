@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		观鱼 | 
+		电子取证 | 
 	 
 	SUPER
 	</title>
@@ -158,7 +158,7 @@
 									</a>
 									
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2021/02/26/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2022%E9%95%BF%E5%AE%89%E6%9D%AF%E4%B8%AA%E4%BA%BA%E8%B5%9B%E5%A4%8D%E7%9B%98/">
                      
 										    电子取证
@@ -179,94 +179,18 @@
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-	观鱼
+	<i class="fa fa-tags" aria-hidden="true"></i>TAGS
 </h1>
+<h2 id="article-title">
+	目前共计 0 个标签
+</h2>
 
-<!-- meta -->
-<div class="article-meta">
-	
-		<span>
-			阅读量:<span id="/about/index.html" class="leancloud_visitors" data-flag-title="观鱼"></span>
-		</span>
-	
 
-	<span>SUPER</span>
-	<span>2023-05-12 14:02:32</span>
-
-  <div id="article-categories">
-    
-
-    
-  </div>
-
-</div>
-
-<!-- content -->
 <div id="article-content">
-	
+	<ul>
+      
+	</ul>
 </div>
-
-<!-- post-guide -->
-
-
-<!-- comment - giscus -->
-
-
-<!-- comment - valine -->
-
-	<div id="vcomments"></div>
-
-
-<script>
-	
-		// 评论
-		new Valine({
-			el: '#vcomments',
-			appId: '',
-			appKey: '',
-			placeholder: '请输入评论',
-			path: window.location.pathname,
-			avatar: 'retro',
-			highlight: false,
-      recordIP: true,
-      enableQQ: true,
-			requiredFields: ['nick','mail']
-		})
-	
-	
-    // 显示次数
-		function showTime(Counter) {
-			var query = new AV.Query("Counter");
-			if($(".leancloud_visitors").length > 0){
-				var url = $(".leancloud_visitors").attr('id').trim();
-				// where field
-				query.equalTo("words", url);
-				// count
-				query.count().then(function (number) {
-					// There are number instances of MyClass where words equals url.
-					$(document.getElementById(url)).text(number?  number : '--');
-				}, function (error) {
-					// error is an instance of AVError.
-				});
-			}
-		}
-		// 追加pv
-		function addCount(Counter) {
-			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
-			var Counter = AV.Object.extend("Counter");
-			var query = new Counter;
-			query.save({
-				words: url
-			}).then(function (object) {
-			})
-		}
-		$(function () {
-			var Counter = AV.Object.extend("Counter");
-			addCount(Counter);
-			showTime(Counter);
-		});
-	
-</script>
 	</div>
 	<div id="footer">
 	<p>
