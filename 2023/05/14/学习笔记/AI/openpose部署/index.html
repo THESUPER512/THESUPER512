@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		Windows下的openpose实战部署操作 | 
+	 
+	SUPER
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">SUPER</a>
+
+	<ul id="menu">
+    
+      <li class="menu-item">
+        <a href="/about" class="menu-item-link">观鱼</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/tags" class="menu-item-link">🏷</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/categories" class="menu-item-link">应该分了</a>
+      </li>
+    
+
+    
+      
+      
+        <li class="menu-item">
+          <a href='https://aaanz.github.io/' class="menu-item-link" target="_blank">
+            激情链接--anz
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://blog.stevesensei.work' class="menu-item-link" target="_blank">
+            在线视频--stevesensi
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://Charmersix.github.io' class="menu-item-link" target="_blank">
+            劲歌热舞--CHARMERsix
+          </a>
+        </li>
+      
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										学习笔记
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										AI
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2023/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/openpose%E9%83%A8%E7%BD%B2/">
+                     
+										    Windows下的openpose实战部署操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										比赛复盘
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/05/12/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2022%E9%95%BF%E5%AE%89%E6%9D%AF%E4%B8%AA%E4%BA%BA%E8%B5%9B%E5%A4%8D%E7%9B%98/">
+                     
+										    2022长安杯个人赛复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/11/06/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/%E7%BE%8E%E4%BA%9A%E6%9D%AF2021%E5%A4%8D%E7%9B%98/">
+                     
+										    2021美亚杯复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	Windows下的openpose实战部署操作
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2023/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/openpose%E9%83%A8%E7%BD%B2/" class="leancloud_visitors" data-flag-title="Windows下的openpose实战部署操作"></span>
+		</span>
+	
+
+	<span>SUPER</span>
+	<span>2023-05-14 10:06:09</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+          
+              <span>
+                  <i class="fa fa-folder" aria-hidden="true">
+                  <a href="/categories/AI学习笔记/">AI学习笔记</a>
+                  </i>
+                
+              </span>
+          
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+            
+                <span>
+                    <i class="fa fa-tag" aria-hidden="true">
+                    <a href="/tags/机器视觉/">机器视觉</a>
+                    </i>
+                </span>
+            
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<p>前段时间为了应付课程作业，学习了一下openpose，的确大有可为，皮套丁真指日可待，但配置环境的确挺无语的</p>
+<p><u><code>OpenPose 是一个开源计算机视觉库，用于实时多人关键点检测和多线程处理，使用 OpenCV 和 Caffe 编写。它是由卡内基梅隆大学与 Facebook AI Research 合作开发的。OpenPose 能够检测身体部位的二维位置，例如头部、颈部、肩膀、肘部、手腕、臀部、膝盖和脚踝的位置，以及手、脚和面部特征点（如眼睛、鼻子和嘴巴）的二维位置。它还可以使用单个 RGB 相机估算这些身体部位的三维位置OpenPose 可以用于各种应用，包括人机交互、运动分析、医疗保健和娱乐。由于其能够以高精度进行实时多人姿势估计，因此在计算机视觉和机器学习领域备受欢迎。</code></u></p>
+<p>话不多说，开搞</p>
+<p>在Windows部署openpose需要用到Cmake编译环境</p>
+<p>用到的东西：</p>
+<p>VS2019 ：<a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/zh-hans/downloads/">Download Visual Studio Tools - Install Free for Windows, Mac, Linux (microsoft.com)</a></p>
+<p> openpose源码 ：<a target="_blank" rel="noopener" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">https://github.com/CMU-Perceptual-Computing-Lab/openpose</a></p>
+<p>cmake下载  ：<a target="_blank" rel="noopener" href="https://cmake.org/download/">Download | CMake</a></p>
+<p>cuda、cudun，本文这两个安装配置也是需要的，因为我们是要使用的GPU去跑的 ，之后会在写一篇关于cuda安装教程（</p>
+<p>但CMake里是有选项的 还有 CPU openCL 剩下就是cuda：我们今天的小小帮手。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514142111815.png" alt="image-20230514142111815"></p>
+<p>要是你的电脑没有显卡的话，那就寄掉力。只能使用CPU了。</p>
+<p>小朋友们你们下好了没</p>
+<p>下好了我们就要开始喽   \ (∩_∩) &#x2F;</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="cmake下载安装"><a href="#cmake下载安装" class="headerlink" title="cmake下载安装"></a>cmake下载安装</h3><p>进入下载页面</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514111738893.png" alt="image-20230514111738893"></p>
+<p>直接下最新的，但是可以追求稳定，往后推几个版本。(●’◡’●)</p>
+<h3 id="openpose"><a href="#openpose" class="headerlink" title="openpose"></a>openpose</h3><p>先安上再说</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514110656373.png" alt="image-20230514110656373"></p>
+<p>open pose下完，解压过后的文件目录，当然这是完全体，要是上官网上下的话是要少一个build文件夹的</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514111020400.png" alt="image-20230514111020400"></p>
+<p>可以直接在open pose的目录下新建文件夹build</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514121213728.png" alt="image-20230514121213728"></p>
+<p>在build文件夹下启动cmake-gui图形化操作页面</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514121458558.png" alt="image-20230514121458558"></p>
+<p>刚打开的确全部飘红，是因为环境没配，模型没下</p>
+<p>改一下路径</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514122203119.png" alt="image-20230514122203119"></p>
+<p>放到openpose解压后的对应路径下，配置一下，然后点击configure配置一下</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514122749352.png" alt="image-20230514122749352"></p>
+<p>根据自己的vs版本进行配置，之后第二个框如果不选的话默认是x64架构，直接点击finsh就可以（真人快打音效(●ˇ∀ˇ●)</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514123248519.png" alt="image-20230514123248519"></p>
+<p>然后就是漫长的等待时间，因为有很多模型没有下载，还有pylind11的一些配置文件也没下载，当时下了一晚上也没下完，前一天晚上啥样，第二天也还是啥样。还不如自己下模型</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514123812505.png" alt="image-20230514123812505"></p>
+<p>点击models下面的这个getModels文件，芜湖准备起飞</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514124012347.png" alt="image-20230514124012347"></p>
+<p>有一说一还是机房的网速快，宿舍都是几kb的下，有点蚌埠住</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514131425138.png" alt="image-20230514131425138"></p>
+<p>这些也全部点一下</p>
+<p>还是有点问题的</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514134403785.png" alt="image-20230514134403785"></p>
+<p>就是caffe和bybind11这两个文件夹是空的，需要再去下git一下就能找到</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514134659887.png" alt="image-20230514134659887"></p>
+<p>下载下来，解压到对应文件夹，再点击congfigure就不会出现报错了</p>
+<p>congfigure后，飘红</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135146416.png" alt="image-20230514135146416"></p>
+<p>点上BUILD_PYTHON，然后继续点congfigure</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135336957.png" alt="image-20230514135336957"></p>
+<p>看到红的地方还能点，继续点，三个全点上</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135435799.png" alt="image-20230514135435799"></p>
+<p>继续呗，还能说啥，最后一个了，点叭，带着我的意志。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135531238.png" alt="image-20230514135531238"></p>
+<p>然后就没问题了，(●’◡’●)开心捏</p>
+<p>然后再点generate，就生成了一个可执行的sln文件</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135751431.png" alt="image-20230514135751431"></p>
+<p>就进到vs2019的编译环境中力，家人们快来看看现在的进展吧o(<em>￣▽￣</em>)ブ</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514135825657.png" alt="image-20230514135825657"></p>
+<p>右键单击，再最下面一栏有属性</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514140048793.png" alt="image-20230514140048793"></p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514140122467.png" alt="image-20230514140122467"></p>
+<p>在调试一栏的命令参数中进行填写命令</p>
+<p>–video 路径 文件名 &#x2F;&#x2F; 这是对目标视频进行姿态识别</p>
+<p>–net_resolution 320x320  &#x2F;&#x2F;喂喂喂，这个就是可有来头了，因为鄙人电脑显卡是GTX 1650的，说实话显存4G，运行起来真的是一滩浓稀，但这个命令可以有效的减少网络流量</p>
+<p>据项目作者所说，要运行 <code>openpose</code>，至少需要 <strong>4G</strong> 。默认情况，<code>caffe</code> 会占用大约 <code>12G</code>，如果使用 <code>cudnn</code> 的话，就能降低至 <code>2.2G</code>，这个是针对人体25个关键点检测而言的，如果是 <code>COCO</code> 的话，大概是 <code>1.5G</code> 碰到上述问题，可以通过减小网络大小来解决，但准确率会减小。</p>
+<p>嗨呀，能使不就行了，还要啥自行车，准确率什么的往后稍稍。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514141116512.png" alt="image-20230514141116512"></p>
+<p>完成力，小朋友们你们完成了🐎</p>
+<p>点击确定</p>
+<p>就可以编译运行了</p>
+<p>第一次编译，时间上可能会有点长，稍等片刻，可以先上个撤硕，回来后估计就编译完了</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20230514141506747.png" alt="image-20230514141506747"></p>
+<p>完成力。大功告成</p>
+<p>那么今天的智慧创想就到这里，小朋友们你们学会了嘛。学不会的小朋友也不要气馁，继续加油哦。</p>
+<p>快来和苏璞老师说再见叭ヾ(•ω•&#96;)o</p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/05/12/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2022%E9%95%BF%E5%AE%89%E6%9D%AF%E4%B8%AA%E4%BA%BA%E8%B5%9B%E5%A4%8D%E7%9B%98/">
+                2022长安杯个人赛复盘
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			el: '#vcomments',
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			path: window.location.pathname,
+			avatar: 'retro',
+			highlight: false,
+      recordIP: true,
+      enableQQ: true,
+			requiredFields: ['nick','mail']
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+	<a href="/">SUPER</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	I think I gonna miss you。
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
