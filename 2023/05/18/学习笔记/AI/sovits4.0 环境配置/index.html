@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		这是标签叭(ˉ▽ˉ；)... | 
+		sovits4.0 环境配置 | 
 	 
 	SUPER
 	</title>
@@ -165,7 +165,7 @@
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2023/05/18/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/sovits4.0%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
                      
 										    sovits4.0 环境配置
@@ -234,34 +234,105 @@
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-	<i class="fa fa-tags" aria-hidden="true"></i>TAGS
+	sovits4.0 环境配置
 </h1>
-<h2 id="article-title">
-	目前共计 2 个标签
-</h2>
 
+<!-- meta -->
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2023/05/18/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/sovits4.0%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="leancloud_visitors" data-flag-title=""></span>
+		</span>
+	
 
-<div id="article-content">
-	<ul>
+	<span>SUPER</span>
+	<span>2023-05-18 19:38:05</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
       
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/电子取证/">电子取证(2)</a>
-                </span>
-            </li>
-          
-      
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/机器视觉/">机器视觉(1)</a>
-                </span>
-            </li>
-          
-      
-	</ul>
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
 </div>
+
+<!-- content -->
+<div id="article-content">
+	<hr>
+<hr>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2023/07/24/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  C#学习笔记
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/openpose%E9%83%A8%E7%BD%B2/">
+                Windows下的openpose实战部署操作
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
 	</div>
 	<div id="footer">
 	<p>
