@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		车联网安全学习 | 
+	 
+	SUPER
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">SUPER</a>
+
+	<ul id="menu">
+    
+      <li class="menu-item">
+        <a href="/about" class="menu-item-link">观鱼</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/tags" class="menu-item-link">🏷</a>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a href="/categories" class="menu-item-link">应该分了</a>
+      </li>
+    
+
+    
+      
+      
+        <li class="menu-item">
+          <a href='https://aaanz.github.io/' class="menu-item-link" target="_blank">
+            激情链接--anz
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://blog.stevesensei.work' class="menu-item-link" target="_blank">
+            在线视频--stevesensi
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://Charmersix.github.io' class="menu-item-link" target="_blank">
+            劲歌热舞--CHARMERsix
+          </a>
+        </li>
+      
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										学习笔记
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										AI
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/05/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/openpose%E9%83%A8%E7%BD%B2/">
+                     
+										    Windows下的openpose实战部署操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/05/18/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/sovits4.0%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                     
+										    sovits4.0 环境配置
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										比赛复盘
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/05/12/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2022%E9%95%BF%E5%AE%89%E6%9D%AF%E4%B8%AA%E4%BA%BA%E8%B5%9B%E5%A4%8D%E7%9B%98/">
+                     
+										    2022长安杯个人赛复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/01/09/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2023%E9%BE%99%E4%BF%A1%E6%9D%AF%E5%A4%8D%E7%9B%98/">
+                     
+										    2023龙信杯复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/11/06/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/%E7%BE%8E%E4%BA%9A%E6%9D%AF2021%E5%A4%8D%E7%9B%98/">
+                     
+										    2021美亚杯复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										车联网安全
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2025/01/09/%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%AE%9E%E4%B9%A0%EF%BC%9A2024%E5%B9%B412%E6%9C%8831%E6%97%A5%E8%B5%B7%EF%BC%89/">
+                     
+										    车联网安全学习
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	车联网安全学习
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2025/01/09/%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/%E8%BD%A6%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%AE%9E%E4%B9%A0%EF%BC%9A2024%E5%B9%B412%E6%9C%8831%E6%97%A5%E8%B5%B7%EF%BC%89/" class="leancloud_visitors" data-flag-title="车联网安全学习"></span>
+		</span>
+	
+
+	<span>SUPER</span>
+	<span>2025-01-09 10:01:48</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+          
+              <span>
+                  <i class="fa fa-folder" aria-hidden="true">
+                  <a href="/categories/车联网安全/">车联网安全</a>
+                  </i>
+                
+              </span>
+          
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+            
+                <span>
+                    <i class="fa fa-tag" aria-hidden="true">
+                    <a href="/tags/实习/">实习</a>
+                    </i>
+                </span>
+            
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h1 id="车联网安全学习（实习：2024年12月31日起）"><a href="#车联网安全学习（实习：2024年12月31日起）" class="headerlink" title="车联网安全学习（实习：2024年12月31日起）"></a>车联网安全学习（实习：2024年12月31日起）</h1><h2 id="DAY1（2025-1-2）"><a href="#DAY1（2025-1-2）" class="headerlink" title="DAY1（2025.1.2）"></a>DAY1（2025.1.2）</h2><p>今天刚把leader交代的任务搞完，开始学习一下车联网安全工作中需要理解的一些术语</p>
+<h3 id="TBOX系统"><a href="#TBOX系统" class="headerlink" title="TBOX系统"></a>TBOX系统</h3><p>Tbox是汽车上的一个盒子，指<strong>Telematics Box，远程通信终端</strong>，集成车身网络和无线通讯功能的产品，可提供Telematics业务，一般安装在仪表盘下方。Tbox是一个基于Android、Linux操作系统的带通讯功能的盒子，内含一张SIM卡，一般是中国联通和移动的SIM卡，与这个盒子配套硬件还有GPS天线，4G天线等。车机要联网必须有Tbox设备才能实现。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/0656c9b52081edc7fee557f47a694bf.jpg" alt="0656c9b52081edc7fee557f47a694bf"></p>
+<p>​                                                            TBOX实物图（正面）</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/aa4b0aafadeff94bbf2d75c45c50400.jpg" alt="aa4b0aafadeff94bbf2d75c45c50400"></p>
+<p>​                                                            TBOX实物图（背面）</p>
+<p>TBOX的功能模块主要包括4G模块、GPS模块、蓝牙模块、以太网模块、CAN通信模块、电话语言模块、电源模块、Airbag模块、E&#x2F;B-call模块等，每个模块之间紧密联系在一起，形成一个完整的远程通信终端。车端具备接受远程控制指令，对远程控制指令进行真实性和完整性校验的服务的系统。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250102104912501.png" alt="image-20250102104912501"></p>
+<p>在安全测试中，使用漏洞扫描工具分别对系统和固件进行漏扫并与漏洞处置方案比较。</p>
+<h3 id="IVI系统"><a href="#IVI系统" class="headerlink" title="IVI系统"></a>IVI系统</h3><p>车载信息娱乐系统（In-Vehicle Infotainment 简称IVI），是采用车载专用中央处理器，基于车身总线系统和互联网服务，形成的车载综合信息处理系统。IVI能够实现包括三维导航、实时路况、IPTV、辅助驾驶、故障检测、车辆信息、车身控制、移动办公、无线通讯、基于在线的娱乐功能及<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/TSP/2805783?fromModule=lemma_inlink">TSP</a>服务等一系列应用，极大的提升了车辆电子化、网络化和智能化水平。</p>
+<ul>
+<li>IVI的人机交互形式的<strong>三板斧</strong>：声音、图像、文字</li>
+<li>IVI的人机交互媒介的<strong>四件套</strong>：中控屏幕（显示、触控）、仪表显示、语音、方向盘</li>
+</ul>
+<h3 id="CAN通信"><a href="#CAN通信" class="headerlink" title="CAN通信"></a>CAN通信</h3><p>CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。在当前的汽车产业中，出于对安全性、舒适性、方便性、低公害、低成本的要求，各种各样的电子控制系统被开发了出来。由于这些系统之间通信所用的数据类型及对可靠性的要求不尽相同，由多条总线构成的情况很多，线束的数量也随之增加。为适应“减少线束的数量”、“通过多个LAN，进行大量数据的高速通信”的需要，1986 年德国电气商博世公司开发出面向汽车的CAN 通信协议。此后，CAN 通过ISO11898 及ISO11519 进行了标准化，现在在欧洲已是汽车网络的标准协议。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/adazone/article/details/87921510">CAN通信详解(全)_can通信的详细讲解-CSDN博客</a></p>
+<h3 id="V2X通信"><a href="#V2X通信" class="headerlink" title="V2X通信"></a>V2X通信</h3><p>这个名词接触过很多次 。</p>
+<p>通过雷达配合视觉技术实现车辆自身的智能。其实在环境感知方面，除了利用车辆自身的智能，还可以借助外部环境实现信息的获取，这一类技术统称为V2X技术。</p>
+<p>V2X（Vehicle to Everything）技术又称为车用无线通信技术，本质上是一种物联网技术，V代表的是车辆，X代表的是道路、人、车、设备等一切可以连接的设备。</p>
+<p>V2X的本质就是通过道路、行人、车辆间的协调实现整个道路运输的智能化。比如前面有车要并线了，前车可以发一个指令给基站，基站再通知后方的车辆。比如有个人过马路了，可以提前通过手机发指令，要求即将同行的车辆注意避让。诸如此类的协同需要车辆生产商、通信设备厂商、运营服务商的通力配合，是一个庞大的产业链协调分工，需要国家有相关标准推动。</p>
+<p>V2X的各个场景包括：车与车之间（Vehicle to Vehicle,V2V）、车与路之间（Vehicle to Infrastructure,V2I）、车与人之间（Vehicle to Pedestrian, V2P）、车与网络之间（Vehicle to Network, V2N）的交互。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34072734/article/details/113551865">什么是组网？组网技术解析-CSDN博客</a></p>
+<h3 id="电子控制单元（ECU）"><a href="#电子控制单元（ECU）" class="headerlink" title="电子控制单元（ECU）"></a>电子控制单元（ECU）</h3><p>电子控制单元（ECU，Electronic Control Unit）是汽车中的一个微型计算机，负责接收来自各种传感器的信号，对这些信号进行处理和分析，然后根据预设的程序向执行器发出控制指令，从而实现对汽车各种功能的控制。简单来说，ECU就是一个“大脑”，它通过接收和处理信息，来控制汽车的运行。</p>
+<p>ECU通常被封装在一个金属外壳中，以防止受到外部环境的影响。每个ECU都有一个唯一的识别号码，以便于维修人员识别和更换损坏的部件。此外，ECU还具有自我诊断功能，可以检测到系统中的故障，并通过仪表盘上的故障灯向驾驶员发出警告。</p>
+<h3 id="电子控制模块（ECM）"><a href="#电子控制模块（ECM）" class="headerlink" title="电子控制模块（ECM）"></a>电子控制模块（ECM）</h3><p>电子控制模块（ECM，Electronic Control Module）是一种类似于ECU的设备，但它主要负责发动机的控制。ECM是发动机管理系统的核心部分，它可以实时监测发动机的工作状态，并根据需要调整燃油喷射、点火时机等参数，以保证发动机的高效运行。</p>
+<p>与ECU相比，ECM的功能更为专一，它只负责发动机的管理和控制。而ECU则涉及汽车的各个方面，包括发动机、变速器、刹车系统等。此外，ECM通常与发动机的其他控制系统（如节气门位置传感器、曲轴位置传感器等）紧密连接，形成一个复杂的控制网络。</p>
+<p>总之，汽车中的ECU和ECM都是非常关键的部件，它们通过精确的控制和协调，保证汽车的正常运行。随着汽车技术的不断发展，ECU和ECM的功能也将越来越强大，为驾驶员提供更加便捷、安全、舒适的驾驶体验。</p>
+<h3 id="RFID"><a href="#RFID" class="headerlink" title="RFID"></a>RFID</h3><h2 id="DAY2（2025-1-3）"><a href="#DAY2（2025-1-3）" class="headerlink" title="DAY2（2025.1.3）"></a>DAY2（2025.1.3）</h2><p>今天学一下CAN通信，这是车联网安全中非常重要的组成部分</p>
+<p>CAN总线在1991年被大规模应用于汽车中，从那以后<strong>CAN总线就成为了汽车的标配</strong>。	CAN帧运行在两条线路上，分别是CAN-H和CAN-L。当总线遇到干扰时会同时发生在CAN-H和CAN-L上，因此采用差分数据传输的方式可以有效的避免汽车内的干扰影响数据传输的问题。</p>
+<p>做了几道CAN的题，也算是对于can流量有了初步的了解</p>
+<p><a target="_blank" rel="noopener" href="https://core.ed.vsec.blockharbor.io/block/garage">https://core.ed.vsec.blockharbor.io/block/garage</a></p>
+<p>上这上面做做题，练练手，确实有不一样的理解。</p>
+<p>第一道题是找CAN接口名称，由下图可以找到为VCAN0</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250103205101333.png" alt="image-20250103205101333"></p>
+<p>第二题是找到CAN的仲裁码 敲入 candump vcan0 即得 59E</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250103205512524.png" alt="image-20250103205512524"></p>
+<p>由工具 candump 可得到关于CAN通信流量的部分信息</p>
+<p>从前到后依次是</p>
+<p>接口 仲裁帧 数据长度 数据内容 </p>
+<h2 id="DAY3（2025-1-5）"><a href="#DAY3（2025-1-5）" class="headerlink" title="DAY3（2025.1.5）"></a>DAY3（2025.1.5）</h2><p>ICSim</p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2338608">CAN总线安全之ICSim模拟器-腾讯云开发者社区-腾讯云</a></p>
+<p>今天就稍微在虚拟机里面搭了一个车辆控制的模拟器，大体了解了一下</p>
+<h2 id="DAY4（2025-1-6）"><a href="#DAY4（2025-1-6）" class="headerlink" title="DAY4（2025.1.6）"></a>DAY4（2025.1.6）</h2><p>汽车诊断协议</p>
+<p><strong>ECU</strong>代表<strong>电子控制单元</strong>。它指的是一种嵌入式系统，用于控制现代车辆、机械或其他设备中的各种电子功能。ECU 负责管理和控制车辆的不同子系统，如发动机、变速器、安全气囊、空调等。</p>
+<h3 id="车辆中的-ECU-类型："><a href="#车辆中的-ECU-类型：" class="headerlink" title="车辆中的 ECU 类型："></a>车辆中的 ECU 类型：</h3><ul>
+<li><strong>发动机控制单元（ECU）</strong>：管理发动机性能、燃油喷射、点火时机和排放。</li>
+<li><strong>变速器控制单元（TCU）</strong>：控制车辆变速器的操作，包括换挡和齿轮选择。</li>
+<li><strong>车身控制模块（BCM）</strong>：处理与车辆灯光、窗户、车门和其他舒适功能相关的功能。</li>
+<li><strong>安全气囊控制模块（ACM）</strong>：监控传感器并控制在发生碰撞时气囊的展开。</li>
+</ul>
+<p>一般而言，ECU 通过调节电子系统和执行诊断功能来提高车辆的性能、安全性和效率。</p>
+<p><strong>UDS</strong>代表<strong>统一诊断服务</strong>，UDS（Unified Diagnostic Services）是一种用于汽车电子设备中的标准通信协议，用于诊断和故障排除车辆系统。它在汽车行业中广泛应用，用于诊断工具（如扫描工具）与车辆电子控制单元（ECUs）之间的通信。</p>
+<h3 id="UDS的主要特点："><a href="#UDS的主要特点：" class="headerlink" title="UDS的主要特点："></a>UDS的主要特点：</h3><ul>
+<li><p><strong>诊断通信</strong>：UDS使诊断工具和车辆的ECU之间能够进行通信，读取故障码、清除错误、执行诊断测试以及更新软件。</p>
+</li>
+<li><p><strong>标准化协议</strong>：UDS在ISO 14229标准下规范，确保不同制造商和车辆型号之间的互操作性。</p>
+</li>
+<li><p>诊断功能</p>
+<p>：它支持多种诊断服务，例如：</p>
+<ul>
+<li><strong>读取&#x2F;写入数据</strong>：允许读取或修改ECU数据（如传感器值、配置设置）。</li>
+<li><strong>读取&#x2F;清除故障码</strong>：便于读取和清除车辆ECU中的诊断故障码（DTC）。</li>
+<li><strong>安全访问</strong>：确保对车辆ECU某些敏感功能的安全访问。</li>
+<li><strong>ECU复位&#x2F;编程</strong>：为系统更新或修复提供重置或重新编程车辆ECU的能力。</li>
+</ul>
+</li>
+</ul>
+<h3 id="常见的UDS服务："><a href="#常见的UDS服务：" class="headerlink" title="常见的UDS服务："></a>常见的UDS服务：</h3><ul>
+<li><strong>服务0x01</strong>：诊断会话控制</li>
+<li><strong>服务0x02</strong>：ECU复位</li>
+<li><strong>服务0x03</strong>：通过标识符读取数据</li>
+<li><strong>服务0x11</strong>：事件响应</li>
+<li><strong>服务0x27</strong>：安全访问</li>
+<li><strong>服务0x34</strong>：例程控制</li>
+</ul>
+<h3 id="在汽车中的应用："><a href="#在汽车中的应用：" class="headerlink" title="在汽车中的应用："></a>在汽车中的应用：</h3><ul>
+<li><strong>经销商和修理厂</strong>：UDS广泛应用于汽车经销商和修理厂，用于车辆诊断和修理。</li>
+<li><strong>OEM（原始设备制造商）</strong>：UDS使制造商能够为不同的车辆型号提供软件更新和诊断服务。</li>
+</ul>
+<p>总之，UDS是现代汽车诊断中不可或缺的工具，它为车辆与诊断工具之间提供标准化的通信，方便进行维护、修理和软件更新。</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250106093515174.png" alt="image-20250106093515174"></p>
+<p>主要关注网络层和应用层。ISO 14229-1（UDS）ISO 15765-3（应用层） ISO 15765-2（网络层）</p>
+<h3 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h3><h4 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h4><p>ISO 15765-2标准体现网络层的总体功能</p>
+<p><strong>ISO 15765-2</strong>是ISO 15765标准的一部分，它定义了在<strong>控制器局域网络（CAN）上进行汽车诊断通信的传输协议</strong>。该标准通常被称为<strong>ISO-TP（传输协议）</strong>，是实现诊断工具与车辆ECU之间通信的关键。</p>
+<h3 id="ISO-15765-2的主要特点："><a href="#ISO-15765-2的主要特点：" class="headerlink" title="ISO 15765-2的主要特点："></a>ISO 15765-2的主要特点：</h3><ol>
+<li><strong>CAN的传输协议</strong>：<ul>
+<li>CAN（控制器局域网络）是一种在车辆中广泛使用的通信协议，用于高效传输短消息。</li>
+<li>ISO 15765-2扩展了CAN的功能，允许通过分段和重组发送和接收超过8字节的更大消息。</li>
+</ul>
+</li>
+<li><strong>数据帧格式</strong>：<ul>
+<li>CAN消息的最大有效载荷为8字节。ISO 15765-2定义了如何将较大的数据包拆分为较小的帧，并在接收端重组。</li>
+<li>具体规定了单帧、多帧以及流量控制帧的格式。</li>
+</ul>
+</li>
+<li><strong>消息类型</strong>：<ul>
+<li><strong>单帧（SF）</strong>：用于单个CAN帧内可以容纳的短消息。</li>
+<li><strong>首帧（FF）</strong>：用于标识需要多个帧传输的大消息的起始部分。</li>
+<li><strong>连续帧（CF）</strong>：用于传输多帧消息的后续部分。</li>
+<li><strong>流量控制帧（FC）</strong>：用于管理发送方和接收方之间的数据流，防止缓冲区溢出。</li>
+</ul>
+</li>
+<li><strong>诊断中的应用</strong>：<ul>
+<li>ISO 15765-2是诸如**UDS（统一诊断服务）**和**KWP2000 on CAN**等协议的基础。</li>
+<li>支持读取故障码、写入数据以及重新编程ECU。</li>
+</ul>
+</li>
+<li><strong>错误处理</strong>：<ul>
+<li>定义了处理错误的机制，例如重新传输和会话超时，确保通信的可靠性。</li>
+</ul>
+</li>
+<li><strong>标准化通信</strong>：<ul>
+<li>提供了一种标准化的数据传输方法，使不同诊断工具和车辆ECU之间的互操作性成为可能。</li>
+</ul>
+</li>
+</ol>
+<h3 id="使用场景："><a href="#使用场景：" class="headerlink" title="使用场景："></a>使用场景：</h3><ul>
+<li>车载诊断（OBD-II）<ul>
+<li>广泛应用于OBD-II系统中，将车辆的诊断信息传输到外部工具。</li>
+</ul>
+</li>
+<li>车辆编程与配置<ul>
+<li>用于ECU的软件更新和参数配置。</li>
+</ul>
+</li>
+<li>实时数据交换<ul>
+<li>用于监控车辆性能并运行诊断测试。</li>
+</ul>
+</li>
+</ul>
+<p>ISO 15765-2是汽车行业中的一个关键标准，支持在CAN总线上进行高效可靠的诊断通信。它确保了大诊断消息能够在网络中无缝传输，成为现代车辆诊断和维护中不可或缺的一部分。</p>
+<h4 id="网络节点之间的通信"><a href="#网络节点之间的通信" class="headerlink" title="网络节点之间的通信"></a>网络节点之间的通信</h4><p>两个网络节点之间，依靠can ID来进行通信，就像TCP&#x2F;IP协议的网络中，使用IP地址进行通信一样。不过两者的机制稍微有些不同。</p>
+<p>首先来了解两个概念：</p>
+<p>功能寻址：广播诊断请求Request，同时等待总线上的ECU给与响应。</p>
+<p>物理寻址：指定发送特定诊断请求Request，等待指定ECU给与响应。</p>
+<p>功能寻址是一对多，而物理寻址是一对一。</p>
+<p>ISO 15765-4标准定义了一些CAN ID的含义</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250106101616344.png" alt="image-20250106101616344"></p>
+<p>7DF是功能寻址，用来向总线上所有的ECU发送CAN帧，7E0-7E7为1号到8号ECU的接收ID，而7E8到7EF为1号到8号ECU的发送ID。</p>
+<p>由于功能寻址以及物理寻址的特性，当发出发送ID0x7DF的请求报文时，由于多个ECU都具有响应0x7DF这个接受ID的功能，故多个ECU都能够接受并处理这个发送的请求报文，并返回了CAN ID 为ECU的发送ID的响应报文。</p>
+<p>但由于诊断仪发出了一个CAN ID 为0x7E0的请求报文时，物理寻址的接受ID唯一，便只有唯一的ECU接受并处理请求报文，并返回ID为0x7E8的响应报文（物理寻址中发送ID通常为物理寻址的接受ID+8，因此物理寻址接受ID为0x7E0，则发送ID为0x7E8）。</p>
+<p><strong>OBD</strong>代表<strong>车载诊断</strong>。它是车辆的自我诊断系统，用于监控和报告各种车辆系统的健康状况和性能。OBD主要用于识别和诊断与发动机、变速器、排放和其他关键车辆部件相关的问题。它提供对故障码的访问，帮助技术人员定位故障部件，并广泛用于排放控制。</p>
+<h3 id="OBD的主要特点："><a href="#OBD的主要特点：" class="headerlink" title="OBD的主要特点："></a>OBD的主要特点：</h3><ol>
+<li><strong>自我诊断</strong>：<ul>
+<li>OBD系统监控车辆的各种部件，包括发动机、排放系统、燃油系统和变速器，确保它们的正常运行。</li>
+<li>当检测到问题时，系统会生成诊断故障码（DTC），技术人员可以使用诊断工具读取这些代码。</li>
+</ul>
+</li>
+<li><strong>OBD-II</strong>：<ul>
+<li><strong>OBD-II</strong>是第二代车载诊断系统，是1996年后大多数车辆使用的标准。</li>
+<li>它提供比原始OBD系统更全面的诊断功能，支持更广泛的传感器和系统。</li>
+</ul>
+</li>
+<li><strong>诊断故障码（DTC）</strong>：<ul>
+<li>当检测到问题时，OBD系统会存储描述问题的DTC，例如“P0300”（检测到随机失火）。</li>
+<li>技术人员使用这些代码来识别车辆中的故障。</li>
+</ul>
+</li>
+<li><strong>OBD-II端口</strong>：<ul>
+<li>OBD-II系统使用一个16针的诊断连接器（OBD-II端口），通常位于车辆仪表盘下方，靠近驾驶员座位。</li>
+<li>该端口允许外部诊断工具连接到车辆并读取诊断信息。</li>
+</ul>
+</li>
+<li><strong>排放监控</strong>：<ul>
+<li>OBD对于监控车辆排放至关重要。它检查像催化转换器和氧气传感器等部件是否正常工作，以减少有害排放。</li>
+<li>在许多地区，OBD是法律要求的一部分，用以确保车辆符合环保标准。</li>
+</ul>
+</li>
+<li><strong>实时数据</strong>：<ul>
+<li>除了读取故障码外，OBD系统还可以提供关于各种车辆参数的实时数据，如发动机温度、燃油压力和油门位置。</li>
+</ul>
+</li>
+</ol>
+<h3 id="使用场景：-1"><a href="#使用场景：-1" class="headerlink" title="使用场景："></a>使用场景：</h3><ul>
+<li>车辆诊断与修理<ul>
+<li>维修人员使用OBD工具读取DTC和实时数据，从而更快、更准确地进行诊断和修理。</li>
+</ul>
+</li>
+<li>排放测试<ul>
+<li>OBD系统用于排放测试，确保车辆符合排放标准。</li>
+</ul>
+</li>
+<li>车辆性能监控<ul>
+<li>车主也可以使用OBD系统监控车辆的性能，确保一切正常运行。</li>
+</ul>
+</li>
+<li>软件更新<ul>
+<li>制造商可以使用OBD系统进行远程软件更新或诊断车辆。</li>
+</ul>
+</li>
+</ul>
+<p>OBD是车辆维护、诊断和排放标准合规性的重要系统。它提供了识别故障、监控车辆性能和确保排放控制合规的宝贵数据，是现代车辆不可或缺的一部分。</p>
+<h4 id="拆分的方法"><a href="#拆分的方法" class="headerlink" title="拆分的方法"></a>拆分的方法</h4><p>一个can帧有8个字节的数据段，当我们要查询的数据量远远超过8个字节，一个can帧没法完全将数据传输过来，因此就需要发送多个can帧，而为了协调这个发送多个can帧的过程，ISO 15765-2标准定义了四种can帧的类型。</p>
+<p>四种CAN帧类型：</p>
+<p>1.单帧： （CAN）通信协议中，传输一个数据包的单个消息帧。CAN协议使用不同类型的帧来传输数据，其中单帧是一种最基本的数据帧格式，用于发送长度不超过8字节的数据。</p>
+<p>2.首帧：首帧（First Frame，FF）是多帧传输的一部分，用于开始传输一个数据长度超过8字节的大数据包。首帧是ISO 15765-2（传输协议）中定义的消息帧之一，主要用于拆分较大的数据并标识接下来的数据帧。</p>
+<p>3.连续帧： 连续帧（Continuous Frame，CF）是用于传输一个较大数据包的后续数据帧。它是在首帧（First Frame，FF）之后发送的，用于继续传输超过8字节的数据。连续帧是ISO 15765-2（传输协议）标准的一部分，通常用于车辆诊断或其他嵌入式通信系统中，支持大数据包的传输。</p>
+<p>4.流控制帧：流控制帧（Flow Control Frame，FC）是用于管理多帧数据传输过程中的流量控制的帧类型。流控制帧主要用于通知发送端和接收端如何协调数据的发送和接收，避免数据传输过程中出现丢失或拥堵的情况。流控制帧通常在使用ISO 15765-2传输协议（如在车辆诊断中）时被使用。</p>
+<p>示例：发送VIN码</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250106115448338.png" alt="image-20250106115448338"></p>
+<h3 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h3><p>主要是了解一些ISO 15031-5的一些和排放有关的服务</p>
+<p>主要是一些服务内容 在这里需要提前说明的一点是关于</p>
+<p>第一个字节是响应SID，通常为请求SID+0x40，刚刚我们申请的是09服务，所以0x9+0x40为0x49，也就是这里的响应SID的由来。与网络层物理寻址的请求响应报文相区别。</p>
+<h2 id="DAY7（2025-1-8）"><a href="#DAY7（2025-1-8）" class="headerlink" title="DAY7（2025.1.8）"></a>DAY7（2025.1.8）</h2><p>今天把XRAY给配置了一下，然后跟着原始报告走了一遍流程</p>
+<p>然后来台架这边来实操<img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/4528bc166fd890e5b2cee6bd14cb184.jpg" alt="4528bc166fd890e5b2cee6bd14cb184"></p>
+<p>![4528bc166fd890e5b2cee6bd14cb184](D:\应用软件\File\WeChat Files\wxid_5wwq922o9fpn22\FileStorage\Temp\85c2150900befb0d404b788b2c13314.jpg)</p>
+<p>这就是 PCAN-usb 比较重要的接线工具</p>
+<p>接完线后，计算机管理中就有，PCAN-USB的出现（光</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250108175402168.png" alt="image-20250108175402168"></p>
+<p>第一次使用pcan-usb需要安装pcan驱动，直接从官网下载就行，是免费的</p>
+<p>连接后，使用PCAN-view查看CAN总线的数据，设置500</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250108182023672.png" alt="image-20250108182023672"></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Fs8yzu-ZpAENb-PSkRZ5QA">什么是P_CAN？如何使用它？</a></p>
+<p>今天的下发的第一个小实验（不能摸🐟了，😢）：</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250108170311546.png" alt="image-20250108170311546"></p>
+<p>前几天对于vin码有过学习，这里就不展开赘述</p>
+<p>但当时接到新手村任务的时候确实不知道vin码怎么读，但不过经过高强度的信息检索之后终于发现了这篇文章。</p>
+<p><a target="_blank" rel="noopener" href="https://www.iodraw.com/blog/221207386">获取车辆VIN等OBD信息 - 博客 - ioDraw</a></p>
+<p>（呜呜呜纯菜鸡，啥时候能够不看文章啊）</p>
+<p>ID&#x3D;2024,Type&#x3D;D,Length&#x3D;8,Data&#x3D;10 14 <strong>49</strong> 02 01 4C 47 58</p>
+<p>ID&#x3D;2024,Type&#x3D;D,Length&#x3D;8,Data&#x3D;21 43 45 36 43 42 32 4E</p>
+<p>ID&#x3D;2024,Type&#x3D;D,Length&#x3D;8,Data&#x3D;22 30 33 30 38 36 38 33</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250108224819440.png" alt="image-20250108224819440"></p>
+<p>大概就是这样哈哈哈，已经不早了（该睡觉了哈哈</p>
+<p>拜拜，明天还要吃KFC芜湖</p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2025/01/09/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2023%E9%BE%99%E4%BF%A1%E6%9D%AF%E5%A4%8D%E7%9B%98/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  2023龙信杯复盘
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/05/18/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/AI/sovits4.0%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                AI
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+	<a href="/">SUPER</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	I think I gonna miss you。
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
