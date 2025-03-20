@@ -168,6 +168,28 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2025/03/20/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/RTSP%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/">
+                     
+										    RTSP协议学习
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/03/20/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/wireshark/">
+                     
+										    威鲨
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -195,6 +217,39 @@
 									<a href="/2025/01/09/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/2023%E9%BE%99%E4%BF%A1%E6%9D%AF%E5%A4%8D%E7%9B%98/">
                      
 										    2023龙信杯复盘
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/03/20/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/misc2022%E5%B9%B4/">
+                     
+										    2022年misc杂烩
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/03/20/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/misc%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90/">
+                     
+										    misc流量分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/03/20/%E6%AF%94%E8%B5%9B%E5%A4%8D%E7%9B%98/%E7%9B%98%E5%8F%A4%E7%9F%B3%E5%88%9D%E8%B5%9B%E5%A4%8D%E7%9B%98/">
+                     
+										    盘古石初赛复盘
                      
 									</a>
 								</li>
@@ -517,6 +572,39 @@
 <p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250108224819440.png" alt="image-20250108224819440"></p>
 <p>大概就是这样哈哈哈，已经不早了（该睡觉了哈哈</p>
 <p>拜拜，明天还要吃KFC芜湖</p>
+<h2 id="DAY8（2025-1-9）"><a href="#DAY8（2025-1-9）" class="headerlink" title="DAY8（2025.1.9）"></a>DAY8（2025.1.9）</h2><p>今天把昨天的CAN实验再复现一下，然后再把报告的剩下部分做一做，任务定好了，动力火车开始咯，嘟嘟嘟~</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250109103541693.png" alt="image-20250109103541693"></p>
+<p>先发送了请求09服务中获取VIN码的单帧</p>
+<p>第一个02是数据长度，第二个09是请求的服务，也叫SID，第三个02是请求服务的第二个参数，也就是请求VIN码，</p>
+<p>由于VIN码数据过长，如图所示返回了请求服务的首帧</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250109104350022.png" alt="image-20250109104350022"></p>
+<p>包含了一部分VIN码</p>
+<p>之后发送流控制帧 30 00 01 00 00 00 00 00，得到所有的vin码的包，然后进行十六进制转ASCII码 得到完整的vin码</p>
+<p>LGXCE6CB2N030863</p>
+<h2 id="DAY9（2025-1-13）"><a href="#DAY9（2025-1-13）" class="headerlink" title="DAY9（2025.1.13）"></a>DAY9（2025.1.13）</h2><p>安卓系统学习</p>
+<p><a target="_blank" rel="noopener" href="https://gityuan.com/android/">Android 操作系统架构开篇 - Gityuan博客 | 袁辉辉的技术博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/freeking101/article/details/105329932">Android 系统架构图_软件静态架构图-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://evilpan.com/">有价值炮灰</a></p>
+<p><a target="_blank" rel="noopener" href="https://weishu.me/">Weishu’s Notes - 为数不多的维术</a></p>
+<p>挺无语的写到六千字，忘记保存了，唉</p>
+<p>今天就不打算补了</p>
+<h2 id="DAY10（2025-1-14）"><a href="#DAY10（2025-1-14）" class="headerlink" title="DAY10（2025.1.14）"></a>DAY10（2025.1.14）</h2><p><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/system/263517.html">如何使用Emba对基于Linux的嵌入式设备固件进行分析 - FreeBuf网络安全行业门户</a></p>
+<p>下完emba之后，发现连不上网了，ping也ping不通，可能是更新的问题。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42489549/article/details/112982612">kali linux eth0网卡消失解决方法_kali网卡eth0消失怎么办-CSDN博客</a></p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250114135712239.png" alt="image-20250114135712239"></p>
+<p>问题解决。</p>
+<p>扫描固件的一个工具，之后少不了要和固件打交道，哭了。</p>
+<h2 id="DAY11-（2025-1-15）"><a href="#DAY11-（2025-1-15）" class="headerlink" title="DAY11 （2025.1.15）"></a>DAY11 （2025.1.15）</h2><p>DoIP学习</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/2301_76563067/article/details/132697197">https://blog.csdn.net/2301_76563067/article/details/132697197</a></p>
+<p>DoIP (Diagnostic communication over Internet Protocol)， 是基于以太网的通讯协议对UDS协议的数据进行传输。</p>
+<p>  分为对于车内和车外进行数据传输</p>
+<p>分为物理层和数据传输层。就是</p>
+<h2 id="DAY12-（2025-1-20）"><a href="#DAY12-（2025-1-20）" class="headerlink" title="DAY12 （2025.1.20）"></a>DAY12 （2025.1.20）</h2><p>一晃又是好几天，上周因为leader派了点活，空了几天没写日报，又加上周六周天，一下子就到二十号了，哈哈，明天回家，爽嘞，但不今天日报该写的还得写写。</p>
+<p>周末抽空安装了下frida，打算学习一下安卓逆向，有此打算，挖一个坑，记录一下哈哈哈，看之后的苏璞做不做了哈哈</p>
+<p>今天嘞我上byd车上想过一遍adb相关的流程，但不过，测试的时候发现下面这种情况</p>
+<p><img src="https://supersonw-1311119830.cos.ap-beijing.myqcloud.com/image-20250120134207626.png" alt="image-20250120134207626"></p>
+<p>问了一下同事，说是因为所有工程模式的操作都必须要由byd的工作人员过来认证。有点难嘞哈哈</p>
+<p>无所谓，上极🦊车上继续操作</p>
 
 </div>
 
